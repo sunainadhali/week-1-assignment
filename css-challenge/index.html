@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Breather</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">The Breather</div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#menu">Menu</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <section class="hero" id="home">
+        <div class="overlay"></div>
+        <div class="hero-content">
+            <h1>The Breather</h1>
+            <p>Slow Brew, No Rush</p>
+            <a href="#menu" class="btn">Explore Menu</a>
+        </div>
+    </section>
+
+    <section class="features">
+        <div>☕ Artisan Coffee</div>
+        <div>🍪 Fresh Cookies</div>
+        <div>🥐 Daily Bakes</div>
+        <div>🌿 Cozy Ambience</div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="text">
+            <h2>The Breather Experience</h2>
+            <p>A warm cafe built for conversations, comfort and handcrafted flavors.</p>
+        </div>
+        <div class="image"><img src="assets/images/hero.png"></div>
+    </section>
+
+    <section class="brew">
+        <div><img src="assets/images/barista.png"></div>
+        <div>
+            <h2>Slow Brew, No Rush</h2>
+            <p>Every cup is crafted with patience and care.</p>
+        </div>
+    </section>
+
+    <section class="menu" id="menu">
+        <h2>Signature Menu</h2>
+
+        <div class="menu-grid">
+
+            <div class="card">
+                <img src="assets/images/cookies.png" alt="Cookies">
+                <h3>Cookies</h3>
+            </div>
+
+            <div class="card">
+                <img src="assets/images/pastries.png" alt="Pastries">
+                <h3>Pastries</h3>
+            </div>
+
+            <div class="card">
+                <img src="assets/images/bread.png" alt="Artisan Bread">
+                <h3>Artisan Bread</h3>
+            </div>
+
+            <div class="card">
+                <img src="assets/images/coffee.png" alt="coffee">
+                <h3>coffee</h3>
+            </div>
+
+            <div class="card">
+                <img src="assets/images/cakes.png" alt="Cakes">
+                <h3>Cakes</h3>
+            </div>
+
+            <div class="card">
+                <img src="assets/images/pasta.png" alt="Pasta">
+                <h3>Pasta</h3>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="gallery" id="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery-grid">
+            <img src="assets/images/hero.png">
+            <img src=" assets/images/barista.png">
+            <img src="assets/images/cookies.png">
+            <img src="assets/images/pasta.png">
+            <img src="assets/images/coffee.png">
+            <img src="assets/images/pastries.png">
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <h2>Testimonials</h2>
+        <div class="reviews">
+            <div class="review">★★★★★<p>Wonderful atmosphere.</p>
+            </div>
+            <div class="review">★★★★★<p>Best brownies and coffee.</p>
+            </div>
+            <div class="review">★★★★★<p>Perfect place to relax.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="newsletter">
+        <h2>Stay Brewed In</h2>
+        <input type="email" placeholder="Enter email">
+        <button>Subscribe</button>
+    </section>
+
+    <footer id="contact">
+        <h3>The Breather</h3>
+        <p>Your Favourite Part of the Day</p>
+    </footer>
+    <script>
+
+        const sections = document.querySelectorAll(
+            '.about,.brew,.menu,.gallery,.testimonials,.newsletter'
+        );
+
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show');
+                }
+            });
+        });
+
+        sections.forEach(section => {
+            observer.observe(section);
+        });
+
+    </script>
+</body>
+
+</html>

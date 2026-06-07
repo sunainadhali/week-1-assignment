@@ -1,0 +1,570 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+    --bg: #0A0A0A;
+    --card: #141414;
+    --card-hover: #1E1E1E;
+
+    --gold: #D4AF37;
+    --gold-light: #F4D03F;
+
+    --text: #FFFFFF;
+    --text-light: #B8B8B8;
+
+    --border: #2A2A2A;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--bg);
+    color: var(--text);
+    overflow-x: hidden;
+}
+
+section {
+    padding: 100px 10%;
+}
+
+/* =====================
+   NAVBAR
+===================== */
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: .3s;
+}
+
+header.sticky {
+    background: rgba(10, 10, 10, .95);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border);
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+
+    background: linear-gradient(135deg,
+            var(--gold),
+            var(--gold-light));
+
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.nav-links {
+    display: flex;
+    gap: 35px;
+    list-style: none;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.nav-links a:hover {
+    color: var(--gold);
+}
+
+.nav-btn {
+    text-decoration: none;
+
+    background: linear-gradient(135deg,
+            var(--gold),
+            var(--gold-light));
+
+    color: #000;
+
+    padding: 12px 24px;
+
+    border-radius: 12px;
+
+    font-weight: 700;
+}
+
+.menu-btn {
+    display: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* =====================
+   HERO
+===================== */
+
+.hero {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 80px;
+
+    max-width: 1200px;
+    margin: auto;
+
+    padding-top: 140px;
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.hero-content h1 {
+    font-size: 4rem;
+    line-height: 1.2;
+    margin-bottom: 25px;
+}
+
+.hero-content span {
+    color: var(--gold);
+}
+
+.hero-content p {
+    color: var(--text-light);
+    line-height: 1.9;
+    margin-bottom: 35px;
+    font-size: 1.05rem;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.btn {
+    text-decoration: none;
+
+    background: linear-gradient(135deg,
+            var(--gold),
+            var(--gold-light));
+
+    color: #000;
+
+    padding: 15px 30px;
+
+    border-radius: 12px;
+
+    font-weight: 700;
+
+    transition: .3s;
+}
+
+.btn:hover {
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 10px 30px rgba(212, 175, 55, .35);
+}
+
+.secondary {
+    background: transparent;
+    border: 1px solid var(--gold);
+    color: var(--gold);
+}
+
+.hero-image {
+    flex: 1;
+}
+
+.hero-image img {
+    width: 100%;
+
+    border-radius: 25px;
+
+    border: 2px solid var(--gold);
+
+    box-shadow:
+        0 20px 60px rgba(212, 175, 55, .15);
+}
+
+/* =====================
+   TRUSTED SECTION
+===================== */
+
+.trusted {
+    text-align: center;
+    padding: 40px 10%;
+}
+
+.trusted h3 {
+    color: var(--gold);
+    font-size: 1.4rem;
+}
+
+/* =====================
+   SECTION TITLES
+===================== */
+
+.services h2,
+.about h2,
+.why-us h2,
+.testimonials h2,
+.contact h2 {
+
+    text-align: center;
+    font-size: 2.8rem;
+    margin-bottom: 60px;
+
+    color: var(--gold);
+}
+
+/* =====================
+   SERVICES
+===================== */
+
+.service-grid {
+    display: grid;
+    grid-template-columns:
+        repeat(auto-fit, minmax(280px, 1fr));
+
+    gap: 30px;
+}
+
+.service-card {
+    background: var(--card);
+
+    border: 1px solid var(--border);
+
+    border-radius: 20px;
+
+    padding: 35px;
+
+    transition: .3s;
+}
+
+.service-card:hover {
+
+    background: var(--card-hover);
+
+    transform: translateY(-10px);
+
+    border-color: var(--gold);
+
+    box-shadow:
+        0 15px 40px rgba(212, 175, 55, .15);
+}
+
+.service-card i {
+
+    font-size: 2.5rem;
+
+    background: linear-gradient(135deg,
+            var(--gold),
+            var(--gold-light));
+
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+
+    margin-bottom: 20px;
+}
+
+.service-card h3 {
+    margin-bottom: 15px;
+}
+
+.service-card p {
+    color: var(--text-light);
+    line-height: 1.8;
+}
+
+/* =====================
+   WHY US
+===================== */
+
+.features {
+    display: grid;
+    grid-template-columns:
+        repeat(auto-fit, minmax(250px, 1fr));
+
+    gap: 25px;
+}
+
+.features div {
+
+    background: var(--card);
+
+    border: 1px solid var(--border);
+
+    border-radius: 20px;
+
+    padding: 30px;
+
+    transition: .3s;
+}
+
+.features div:hover {
+
+    border-color: var(--gold);
+
+    transform: translateY(-8px);
+}
+
+.features h3 {
+    color: var(--gold);
+    margin-bottom: 10px;
+}
+
+.features p {
+    color: var(--text-light);
+}
+
+/* =====================
+   ABOUT
+===================== */
+
+.about {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.about-image {
+    flex: 1;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 25px;
+
+    border: 2px solid var(--gold);
+}
+
+.about-content {
+    flex: 1;
+}
+
+.about-content p {
+    color: var(--text-light);
+    line-height: 2;
+}
+
+/* =====================
+   TESTIMONIALS
+===================== */
+
+.testimonial-grid {
+    display: grid;
+    grid-template-columns:
+        repeat(auto-fit, minmax(300px, 1fr));
+
+    gap: 25px;
+}
+
+.testimonial-card {
+
+    background: var(--card);
+
+    border: 1px solid var(--border);
+
+    border-radius: 20px;
+
+    padding: 30px;
+
+    transition: .3s;
+}
+
+.testimonial-card:hover {
+
+    border-color: var(--gold);
+
+    transform: translateY(-8px);
+}
+
+.testimonial-card p {
+    color: var(--text-light);
+    margin: 20px 0;
+}
+
+.testimonial-card h4 {
+    color: var(--gold);
+}
+
+/* =====================
+   CONTACT
+===================== */
+
+.contact form {
+
+    max-width: 700px;
+
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+}
+
+.contact input,
+.contact textarea {
+
+    background: #111;
+
+    color: white;
+
+    border: 1px solid var(--border);
+
+    padding: 16px;
+
+    border-radius: 12px;
+
+    outline: none;
+}
+
+.contact input:focus,
+.contact textarea:focus {
+
+    border-color: var(--gold);
+}
+
+.contact button {
+
+    background: linear-gradient(135deg,
+            var(--gold),
+            var(--gold-light));
+
+    color: #000;
+
+    border: none;
+
+    padding: 16px;
+
+    border-radius: 12px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: .3s;
+}
+
+.contact button:hover {
+
+    box-shadow:
+        0 10px 30px rgba(212, 175, 55, .35);
+}
+
+/* =====================
+   FOOTER
+===================== */
+
+footer {
+
+    background: #050505;
+
+    border-top: 1px solid var(--border);
+
+    text-align: center;
+
+    padding: 30px;
+
+    color: var(--text-light);
+}
+
+/* =====================
+   RESPONSIVE
+===================== */
+
+@media(max-width:900px) {
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .about {
+        flex-direction: column;
+    }
+
+    .nav-links {
+        position: absolute;
+
+        top: 80px;
+        left: -100%;
+
+        width: 100%;
+
+        background: #0A0A0A;
+
+        flex-direction: column;
+
+        text-align: center;
+
+        padding: 30px;
+
+        transition: .3s;
+
+        border-top: 1px solid var(--border);
+    }
+
+    .nav-links.show {
+        left: 0;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    .nav-btn {
+        display: none;
+    }
+}
+
+@media(max-width:600px) {
+
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .services h2,
+    .about h2,
+    .why-us h2,
+    .testimonials h2,
+    .contact h2 {
+        font-size: 2rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+    .btn {
+        text-align: center;
+    }
+}
