@@ -92,13 +92,12 @@ week-1-assignment/
 
 **Screenshots:**
 
-| View | File |
-|------|------|
-| Home – Desktop | `screenshots/portfolio-home-desktop.png` |
-| Home – Mobile | `screenshots/portfolio-home-mobile.png` |
-| Projects Section | `screenshots/portfolio-projects.png` |
-| Contact Page | `screenshots/portfolio-contact.png` |
-
+| View | Screenshot |
+|------|------------|
+| Home – Desktop | ![Home Desktop](screenshots/portfolio-home-desktop.png) |
+| Home – Mobile | ![Home Mobile](screenshots/portfolio-home-mobile.png) |
+| Projects Section | ![Projects](screenshots/portfolio-projects.png) |
+| Contact Page | ![Contact](screenshots/portfolio-contact.png) |
 🔗 [View Live](https://sunainadhali.github.io/week-1-assignment/Portfolio%20website/)
 
 ---
@@ -117,14 +116,12 @@ week-1-assignment/
 - Fully responsive layout (mobile-first, breakpoints at 768px)
 - Consistent branding, typography scale, and whitespace usage
 
-**Screenshots:**
-
-| View | File |
-|------|------|
-| Full Page – Desktop | `screenshots/landing-desktop.png` |
-| Hero – Mobile | `screenshots/landing-hero-mobile.png` |
-| Services Section | `screenshots/landing-services.png` |
-| Contact Form | `screenshots/landing-contact-form.png` |
+| View | Screenshot |
+|------|------------|
+| Full Page – Desktop | ![Landing Desktop](screenshots/landing-desktop.png) |
+| Hero – Mobile | ![Hero Mobile](screenshots/landing-home-mobile.png) |
+| Services Section | ![Services](screenshots/landing-services.png) |
+| Contact Form | ![Contact Form](screenshots/landing-contact-form.png) |
 
 🔗 [View Live](https://sunainadhali.github.io/week-1-assignment/Business%20landing%20page/)
 
@@ -153,13 +150,12 @@ week-1-assignment/
 - Smooth, subtle, and UI-supportive
 
 **Screenshots:**
-
-| View | File |
-|------|------|
-| Flexbox – Desktop | `screenshots/flex-desktop.png` |
-| Flexbox – Mobile | `screenshots/flex-mobile.png` |
-| Grid Layout | `screenshots/grid-layout.png` |
-| Animation Demo | `screenshots/animation-demo.png` |
+| View | Screenshot |
+|------|------------|
+| Flexbox – Desktop | ![Flexbox Desktop](screenshots/flexbox-desktop.png) |
+| Flexbox – Mobile | ![Flexbox Mobile](screenshots/flexbox-mobile.png) |
+| Grid Layout | ![Grid Layout](screenshots/grid-layout.png) |
+| Animation Demo | ![Animation Demo](screenshots/animation-demo.png) |
 
 🔗 [View Live](https://sunainadhali.github.io/week-1-assignment/css-challenge/)
 
